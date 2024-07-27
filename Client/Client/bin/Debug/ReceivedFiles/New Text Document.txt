@@ -1,0 +1,30 @@
+using Microsoft.AspNetCore.Mvc;
+using System.IO;
+
+namespace PdfDownloadApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PdfController : ControllerBase
+    {
+        // This method returns a PDF file as a response to the client.
+        [HttpGet("download")]
+        public IActionResult DownloadPdf()
+        {
+            // Specify the path to the PDF file.
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sample.pdf");
+
+            // Check if the file exists.
+            if (!System.IO.File.Exists(filePath))
+            {
+                return NotFound();
+            }
+
+            // Read the PDF file into a byte array.
+            var pdfBytes = System.IO.File.ReadAllBytes(filePath);
+
+            // Return the PDF file as a FileContentResult.
+            return File(pdfBytes, "application/pdf", "sample.pdf");
+        }
+    }
+}

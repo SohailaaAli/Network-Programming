@@ -1,0 +1,123 @@
+   if(peek()=='e'&&(peekNext()=='+'||peekNext()=='-'))
+      {
+          advance();
+          advance();
+          while (isDigit(peek())) advance();
+      }
+//         if(peek()=='e')
+//         {
+//          advance();
+//          while (isDigit(peek())) advance();
+//         }  
+       
+
+
+
+
+/*      case '=':  
+          if(peek()=='='&&peekNext()=='=')
+              MultiLineComment();
+          break;
+*/
+/* void MultiLineComment()
+  {
+      while((peek()!='='||peekNext()!='='||peekNextNext()!='=') && !isAtEnd())
+      {
+          if(peek()=='\n')
+              line++;
+              advance();
+          
+      }
+      
+  }
+  */
+/*char peekNextNext()
+ {
+ if (current + 2 >= source.length()) {
+ return '\0';
+ }
+ return source.charAt(current + 2);
+ }
+  */
+
+
+      
+  /* while (isDigit(peek())) advance();
+   if (peek() == '_' && isDigit(peekNext())) advance();
+   while (isDigit(peek())) advance();
+   if (peek() == '.' && isDigit(peekNext())) advance();
+   while (isDigit(peek())) advance();
+   String str=source.substring(start, current);
+   String num ="";
+   for(int i=0 ; i<str.length();i++)
+   {
+       if(str.charAt(i)!='_')
+       {
+           num=num+str.charAt(i);
+       }   
+   }
+  addToken(NUMBER,
+       Double.parseDouble(num));
+  */
+  /*while (isDigit(peek())) advance();
+  if (peek() == '.' && isDigit(peekNext())) {
+      advance();
+
+      while (isDigit(peek())) advance();
+  
+    if(peek()=='e'&&(peekNext()=='+'||peekNext()=='-'||peekNext()=='*'||peekNext()=='/')&&isDigit(peekNextNext())){
+        advance();
+        advance();
+    }else if(peek()=='e'&&isDigit(peekNext())){
+        advance();
+    }
+   
+     while (isDigit(peek())) advance();
+  }
+        var Num=source.substring(start, current);
+        
+        addToken(NUMBER,
+       Double.parseDouble(Num));
+*/
+  
+ /* while (isDigit(peek()) ) advance();
+ // Look for a fractional part.
+ if (peek() == '.' && isDigit(peekNext())) {
+ // Consume the "."
+ advance();
+ while (isDigit(peek()) || (peek()=='_' && isDigit(peekNext()))) advance();
+ }
+ String value = source.substring(start,current);
+ value = value.replace("_", "");
+ addToken(NUMBER,
+ Double.parseDouble(value));
+ */
+
+  
+  
+ /*while ((peek() != '"'||previous()=='\\') && !isAtEnd()) {
+ if (peek() == '\n') {
+ line++;
+ }
+ advance();
+ }
+ if (isAtEnd()) {
+ Lox.error(line, "Unterminated string.");
+ return;
+ }
+ // The closing ".
+ advance();
+ // Trim the surrounding quotes.
+ String value = source.substring(start + 1, current - 1);
+ value = value.replace('\\', '\0');
+ addToken(STRING, value);
+*/
+
+
+/*
+char previous()
+ {
+ return source.charAt(current-1);
+ 
+  }
+*/

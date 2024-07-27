@@ -1,0 +1,16 @@
+F:\NetworkProject\Client\Client\bin\Debug\Client.exe.config
+F:\NetworkProject\Client\Client\bin\Debug\Client.exe
+F:\NetworkProject\Client\Client\bin\Debug\Client.pdb
+F:\NetworkProject\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+F:\NetworkProject\Client\Client\obj\Debug\Client.Form1.resources
+F:\NetworkProject\Client\Client\obj\Debug\Client.Properties.Resources.resources
+F:\NetworkProject\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+F:\NetworkProject\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+F:\NetworkProject\Client\Client\obj\Debug\Client.exe
+F:\NetworkProject\Client\Client\obj\Debug\Client.pdb
+F:\NetworkProject\Client\Client\bin\Debug\Interop.WMPLib.dll
+F:\NetworkProject\Client\Client\bin\Debug\AxInterop.WMPLib.dll
+F:\NetworkProject\Client\Client\obj\Debug\Interop.WMPLib.dll
+F:\NetworkProject\Client\Client\obj\Debug\AxInterop.WMPLib.dll
+F:\NetworkProject\Client\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+F:\NetworkProject\Client\Client\obj\Debug\Client.ChoiceFormatOfImage.resources
